@@ -1,0 +1,16 @@
+LOG USE - please read before installing
+
+LOG USE is a VISIBLE personal security monitor. Install it only on a computer you own or administer, and tell anyone else who uses that computer what it does.
+
+What LOG USE records on this PC (stored locally in %LOCALAPPDATA%\LOG USE - nothing is uploaded):
+  * Windows sign-in events from the Security log: successful and failed sign-ins, sign-out, lock and unlock.
+  * Websites visited in Chrome, Edge, Brave, Vivaldi, Opera and Firefox, read from the browsers' own local history files while LOG USE is open.
+  * Threat checks: public blocklists are downloaded from the internet and compared with your history and current connections.
+  * A photo from your camera at sign-in - only after you click TAKE PHOTO, or after a visible countdown that you can cancel (you choose in Settings). Windows shows the camera-in-use indicator.
+
+What the installer changes (you can untick each in the next steps):
+  * Turns on Windows "Logon / Logoff" success and failure auditing.
+  * Adds your Windows user to the "Event Log Readers" group so you can read the Security log.
+  * Makes LOG USE start when you sign in to Windows.
+
+LOG USE does NOT hide itself, does NOT capture passwords or keystrokes, and does NOT read the content of web pages.

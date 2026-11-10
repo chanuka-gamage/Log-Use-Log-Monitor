@@ -1,0 +1,4 @@
+requests>=2.32.0
+opencv-python-headless>=4.10.0
+psutil>=6.0.0
+pyinstaller>=6.10.0

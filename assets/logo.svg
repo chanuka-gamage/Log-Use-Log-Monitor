@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="240" viewBox="0 0 640 240">
+<rect width="640" height="240" rx="28" fill="#090d12"/>
+<path d="M110 34 L177 58 V112 C177 157 149 184 110 204 C71 184 43 157 43 112 V58 Z" fill="#102a2b" stroke="#00d6a5" stroke-width="7"/>
+<path d="M76 117 L100 141 L148 91" fill="none" stroke="#00d6a5" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="218" y="119" font-family="Segoe UI, Arial" font-size="66" font-weight="700" fill="#f3f7fa">LOG <tspan fill="#00d6a5">USE</tspan></text>
+<text x="222" y="160" font-family="Segoe UI, Arial" font-size="19" letter-spacing="3" fill="#91a4b5">CYBERSECURITY MONITOR</text>
+</svg>

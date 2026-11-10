@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Package
+  xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10"
+  xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10"
+  xmlns:rescap="http://schemas.microsoft.com/appx/manifest/foundation/windows10/restrictedcapabilities"
+  xmlns:desktop="http://schemas.microsoft.com/appx/manifest/desktop/windows10"
+  IgnorableNamespaces="uap rescap desktop">
+
+  <!-- Publisher MUST equal the certificate subject used by build_msix.ps1 -->
+  <Identity Name="LOGUSE.PersonalSecurityMonitor" Publisher="CN=LOG USE"
+            Version="2.0.0.0" ProcessorArchitecture="x64" />
+
+  <Properties>
+    <DisplayName>LOG USE</DisplayName>
+    <PublisherDisplayName>LOG USE</PublisherDisplayName>
+    <Logo>Assets\StoreLogo.png</Logo>
+  </Properties>
+
+  <Dependencies>
+    <TargetDeviceFamily Name="Windows.Desktop" MinVersion="10.0.17763.0" MaxVersionTested="10.0.26100.0" />
+  </Dependencies>
+
+  <Resources>
+    <Resource Language="en-us" />
+  </Resources>
+
+  <Applications>
+    <Application Id="LOGUSE" Executable="LOG USE.exe" EntryPoint="Windows.FullTrustApplication">
+      <uap:VisualElements DisplayName="LOG USE"
+                          Description="Personal Cybersecurity Monitor"
+                          BackgroundColor="#090d12"
+                          Square150x150Logo="Assets\Square150x150Logo.png"
+                          Square44x44Logo="Assets\Square44x44Logo.png" />
+      <Extensions>
+        <!-- Starts LOG USE (visibly) when the user signs in to Windows; user can switch it off in Settings > Apps > Startup -->
+        <desktop:Extension Category="windows.startupTask" Executable="LOG USE.exe" EntryPoint="Windows.FullTrustApplication">
+          <desktop:StartupTask TaskId="LOGUSEStartup" Enabled="true" DisplayName="LOG USE" />
+        </desktop:Extension>
+      </Extensions>
+    </Application>
+  </Applications>
+
+  <Capabilities>
+    <rescap:Capability Name="runFullTrust" />
+    <DeviceCapability Name="webcam" />
+  </Capabilities>
+</Package>
